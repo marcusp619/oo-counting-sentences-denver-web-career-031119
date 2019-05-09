@@ -2,6 +2,7 @@ require 'pry'
 
 class String
   attr_accessor :letters
+  
   def sentence?
     self.letters.end_with?(".")
   end
