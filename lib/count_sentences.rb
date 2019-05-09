@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split("!?.").count
-    binding.pry
+     self.split(/\.|\?|\!/).delete_if {|letter| letter.size < 2}.size
   end
 end
